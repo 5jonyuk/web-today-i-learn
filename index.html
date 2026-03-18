@@ -1,15 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
     <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+    <meta property="og:title" content="이삭의 자기소개서" />
+    <meta
+      property="og:description"
+      content="이삭의 자기소개 및 TIL 기록 페이지입니다."
+    />
+    <meta property="og:image" content="./images/이삭이미지.png" />
 
-    <title>Today I Learn</title>
+    <title>이삭의 자기소개서</title>
+    <link rel="icon" type="image/png" href="./images/이삭이미지.png" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
   </head>
@@ -30,11 +34,11 @@
       <div class="profile-card">
         <div class="profile-image">
           <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+          <img src="./images/이삭이미지.png" alt="프로필 사진" />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>이삭</h1>
+          <p class="tagline">반갑습니다! 10개월 동안 재밌게 지내보아요! 😄</p>
         </div>
       </div>
     </section>
@@ -43,8 +47,39 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+        <p>안녕하세요! 함께 성장의 가치를 아는 개발자 오종혁입니다!</p>
+        <div class="social-links" aria-label="소셜 링크">
+          <a
+            class="social-link github-link"
+            href="https://github.com/5jonyuk"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub 바로가기"
+            title="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.22c0 4.5 2.87 8.32 6.84 9.67.5.1.66-.22.66-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.05 1.53 1.05.9 1.57 2.35 1.12 2.92.85.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.86c.85 0 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.95-2.33 4.81-4.56 5.07.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.17.59.67.49A10.25 10.25 0 0 0 22 12.22C22 6.58 17.52 2 12 2Z"
+              />
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a
+            class="social-link velog-link"
+            href="https://velog.io/@5jonyuk/posts"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Velog 바로가기"
+            title="Velog"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.14 4.5 10.52 18h2.94L17.85 4.5h-2.67l-3.17 10.63L8.83 4.5H6.14Z"
+              />
+            </svg>
+            <span>Velog</span>
+          </a>
+        </div>
       </section>
 
       <!-- 기본 정보 -->
@@ -54,19 +89,19 @@
         <table class="info-table">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>오종혁</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ESTP</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>OTT 시청</td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>고기(뭐든지 좋아합니다.)</td>
           </tr>
         </table>
       </section>
@@ -74,14 +109,34 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
-        <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+        <div class="gallery-rows">
+          <div class="gallery-row">
+            <div class="gallery-grid">
+              <!-- TODO: 9장의 이미지를 배치하세요 -->
+              <img src="./images/강릉1.jpeg" alt="강릉 해돋이 사진" />
+              <img src="./images/강릉2.jpeg" alt="강릉역 사진" />
+              <img src="./images/강릉3.jpeg" alt="강릉 바다 사진" />
+            </div>
+            <p class="gallery-caption">&lt;강릉&gt;</p>
+          </div>
+
+          <div class="gallery-row">
+            <div class="gallery-grid">
+              <img src="./images/부산1.jpeg" alt="부산역 사진" />
+              <img src="./images/부산2.jpeg" alt="부산 바다 사진" />
+              <img src="./images/부산3.jpeg" alt="부산 해수욕장 사진" />
+            </div>
+            <p class="gallery-caption">&lt;부산&gt;</p>
+          </div>
+
+          <div class="gallery-row">
+            <div class="gallery-grid">
+              <img src="./images/제주도1.jpeg" alt="제주공항 사진" />
+              <img src="./images/제주도2.jpeg" alt="우무 사진" />
+              <img src="./images/제주도3.jpeg" alt="귤빛정원 사진" />
+            </div>
+            <p class="gallery-caption">&lt;제주도&gt;</p>
+          </div>
         </div>
       </section>
 
@@ -93,11 +148,48 @@
           <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
           <article class="work-card">
             <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
+              <img
+                src="images/폭삭속았수다.jpeg"
+                alt="폭삭속았수다 포스터사진"
+              />
             </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>폭삭 속았수다</h3>
+              <p>
+                제주를 배경으로 인물들의 삶과 감정을 따뜻하게 그려낸
+                드라마입니다. 투박하지만 진심이 담긴 대사와 애순이를 향한
+                관식이의 일편단심이 깊은 여운을 남기며 가족, 사랑, 그리고 청춘의
+                의미를 다시금 생각하게 만드는 작품입니다.
+              </p>
+            </div>
+          </article>
+          <article class="work-card">
+            <iframe
+              src="https://www.youtube.com/embed/ekG9oxWV6Rw"
+              title="만약에 우리 티저 영상"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
+              allowfullscreen
+            ></iframe>
+            <div class="work-info">
+              <h3>만약에 우리</h3>
+              <p>
+                "가장 초라했던 그때, 가장 눈부시던 우리" 고향 가는 고속버스에
+                올라탄 은호(구교환)와 휴학 후 어디론가 떠날 결심을 한
+                정원(문가영), 나란히 앉게 된 두 사람은 뜻밖의 인연을 맺는다.
+                서로의 꿈을 응원하며 의지하던 두 사람은 어느새 일상 깊숙이
+                스며들어 연인으로 발전한다. 웃고, 싸우고, 화해하며 세상을 다
+                가진 듯 뜨겁게 사랑하지만, 현실의 벽 앞에 두 사람은 결국 다른
+                길을 선택하게 된다. 그렇게 10년이 지난 후, 다시 마주한 순간
+                은호는 정원에게 오랫동안 묻어두었던 한마디를 꺼낸다.“만약에
+                우리...”
+              </p>
             </div>
           </article>
         </div>
@@ -116,11 +208,22 @@
           </div>
           <div class="form-group">
             <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
+            <input
+              type="text"
+              id="til-title"
+              name="title"
+              placeholder="학습 주제를 입력하세요"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="til-content">내용</label>
-            <textarea id="til-content" name="content" placeholder="오늘 배운 내용을 정리해주세요" required></textarea>
+            <textarea
+              id="til-content"
+              name="content"
+              placeholder="오늘 배운 내용을 정리해주세요"
+              required
+            ></textarea>
           </div>
           <div class="form-actions">
             <button type="submit">등록</button>
@@ -131,15 +234,41 @@
         <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
         <div class="til-list" id="til-list">
           <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
-          <article class="til-item">
-            <time>2026-03-15</time>
-            <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
-          </article>
+          <article class="til-item"></article>
         </div>
       </section>
-
     </main>
+
+    <div class="password-modal hidden" id="password-modal">
+      <form class="password-modal-content" id="password-form">
+        <h3 id="password-modal-title">비밀번호 확인</h3>
+        <label for="password-input">비밀번호</label>
+        <input
+          type="password"
+          id="password-input"
+          autocomplete="current-password"
+          required
+        />
+        <div class="password-modal-actions">
+          <button type="submit">확인</button>
+          <button type="button" id="password-cancel-button">취소</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="image-modal hidden" id="image-modal">
+      <div class="image-modal-content">
+        <button
+          type="button"
+          class="image-modal-close"
+          id="image-modal-close"
+          aria-label="이미지 닫기"
+        >
+          ×
+        </button>
+        <img id="image-modal-image" src="" alt="" />
+      </div>
+    </div>
 
     <footer>
       <p>&copy; My Page</p>
