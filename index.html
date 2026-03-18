@@ -18,34 +18,38 @@
     <script src="./js/index.js" defer></script>
   </head>
   <body>
-    <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
-      </ul>
-    </nav>
+    <header>
+      <!-- 상단 내비게이션 -->
+      <nav class="top-nav">
+        <span class="nav-logo">My Page</span>
+        <ul class="nav-links">
+          <li><a href="#about">프로필</a></li>
+          <li><a href="#intro">자기소개</a></li>
+          <li><a href="#info">기본 정보</a></li>
+          <li><a href="#gallery">갤러리</a></li>
+          <li><a href="#works">인생 작품</a></li>
+          <li><a href="#til">TIL</a></li>
+        </ul>
+      </nav>
 
-    <!-- 프로필 히어로 -->
-    <section class="hero" id="about">
-      <div class="profile-card">
-        <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <img src="./images/이삭이미지.png" alt="프로필 사진" />
+      <!-- 프로필 히어로 -->
+      <section class="hero" id="about">
+        <div class="profile-card">
+          <div class="profile-image">
+            <!-- TODO: 프로필 이미지를 넣어주세요 -->
+            <img src="./images/이삭이미지.png" alt="프로필 사진" />
+          </div>
+          <div class="profile-info">
+            <h1>이삭</h1>
+            <p class="tagline">반갑습니다! 10개월 동안 재밌게 지내보아요! 😄</p>
+          </div>
         </div>
-        <div class="profile-info">
-          <h1>이삭</h1>
-          <p class="tagline">반갑습니다! 10개월 동안 재밌게 지내보아요! 😄</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </header>
 
     <main>
       <!-- 자기소개 -->
-      <section class="content-section">
+      <section class="content-section" id="intro">
         <h2>자기소개</h2>
         <p>안녕하세요! 함께 성장의 가치를 아는 개발자 오종혁입니다!</p>
         <div class="social-links" aria-label="소셜 링크">
@@ -143,10 +147,10 @@
       <!-- 나를 울린 인생 작품 -->
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
-        <div class="works-list">
+        <ul class="works-list">
           <!-- TODO: 최소 2가지 작품을 소개하세요 -->
           <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
+          <li class="work-card">
             <div class="work-thumbnail">
               <img
                 src="images/폭삭속았수다.jpeg"
@@ -156,14 +160,13 @@
             <div class="work-info">
               <h3>폭삭 속았수다</h3>
               <p>
-                제주를 배경으로 인물들의 삶과 감정을 따뜻하게 그려낸
-                드라마입니다. 투박하지만 진심이 담긴 대사와 애순이를 향한
-                관식이의 일편단심이 깊은 여운을 남기며 가족, 사랑, 그리고 청춘의
-                의미를 다시금 생각하게 만드는 작품입니다.
+                애순이(아이유)를 향한 관식(박보검)이의 일편단심이 깊은 여운을
+                남기며 가족, 사랑, 그리고 청춘의 의미를 다시금 생각하게 만든
+                드라마 였습니다.
               </p>
             </div>
-          </article>
-          <article class="work-card">
+          </li>
+          <li class="work-card">
             <iframe
               src="https://www.youtube.com/embed/ekG9oxWV6Rw"
               title="만약에 우리 티저 영상"
@@ -180,19 +183,12 @@
             <div class="work-info">
               <h3>만약에 우리</h3>
               <p>
-                "가장 초라했던 그때, 가장 눈부시던 우리" 고향 가는 고속버스에
-                올라탄 은호(구교환)와 휴학 후 어디론가 떠날 결심을 한
-                정원(문가영), 나란히 앉게 된 두 사람은 뜻밖의 인연을 맺는다.
-                서로의 꿈을 응원하며 의지하던 두 사람은 어느새 일상 깊숙이
-                스며들어 연인으로 발전한다. 웃고, 싸우고, 화해하며 세상을 다
-                가진 듯 뜨겁게 사랑하지만, 현실의 벽 앞에 두 사람은 결국 다른
-                길을 선택하게 된다. 그렇게 10년이 지난 후, 다시 마주한 순간
-                은호는 정원에게 오랫동안 묻어두었던 한마디를 꺼낸다.“만약에
-                우리...”
+                지독하게 사랑했던 전 여자친구를 만나게되면 나였으면 어떤
+                기분일지에 대해 생각해보게 되는 영화였습니다.
               </p>
             </div>
-          </article>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <!-- TIL (Today I Learned) -->
