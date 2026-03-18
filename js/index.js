@@ -124,20 +124,26 @@ function getInitialItems() {
     return [];
   }
 
-  return [
-    {
-      date: exampleItem.querySelector("time")?.textContent ?? "",
-      title: exampleItem.querySelector("h3")?.textContent ?? "",
-      content: exampleItem.querySelector("p")?.textContent ?? "",
-    },
-  ];
+  const item = {
+    date: exampleItem.querySelector("time")?.textContent?.trim() ?? "",
+    title: exampleItem.querySelector("h3")?.textContent?.trim() ?? "",
+    content: exampleItem.querySelector("p")?.textContent?.trim() ?? "",
+  };
+
+  if (!item.date && !item.title && !item.content) {
+    return [];
+  }
+
+  return [item];
 }
 
 function getStoredItems() {
   const savedItems = localStorage.getItem(STORAGE_KEY);
 
   if (savedItems) {
-    return JSON.parse(savedItems);
+    return JSON.parse(savedItems).filter(function (item) {
+      return item.date || item.title || item.content;
+    });
   }
 
   const initialItems = getInitialItems();
